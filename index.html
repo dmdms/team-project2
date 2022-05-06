@@ -6,25 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>한솜 출판사</title>
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/index-faq.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="script/jquery-1.12.4.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
 
 </head>
 <body>
     <header>
         <div class="header-wrap">
-            <div class="login">
-                <a href="#">로그인 / 회원가입</a>
-            </div>
-            <div class="logo">
-                <a href="/"><img src="images/logo.png" alt="한솜"></a>
+            <div class="logo-wrap">
+                <div class="logo">
+                    <a href="/"><img src="images/logo.png" alt="한솜"></a>
+                </div>
             </div>
             <!-- /.logo -->
             <div class="nav">
+                <div class="gnb-wrap">
                     <ul id="gnb">
                         <li>
-                            <a href="#">한솜소개</a>
+                            <a href="#" class="main-menu">ABOUT HS</a>
                             <ul class="lnb" >
                                 <li><a href="#">출판사 소개</a></li>
                                 <li><a href="#">편집인 소개</a></li>
@@ -33,17 +37,16 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">출판문의</a>
+                            <a href="#" class="main-menu">PUBLICATION</a>
                             <ul class="lnb">
                                 <li><a href="#">자비 출판</a></li>
                                 <li><a href="#">자서전 출판</a></li>
                                 <li><a href="#">전자책 출판</a></li>
                                 <li><a href="#">출판 진행 과정</a></li>
-                                <li><a href="#">원고 보내기</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#">도서정보</a>
+                            <a href="#" class="main-menu">BOOK</a>
                             <ul class="lnb">
                                 <li><a href="#">도서 목록</a></li>
                                 <li><a href="#">신간 도서</a></li>
@@ -51,31 +54,44 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">도서마케팅</a>
+                            <a href="#" class="main-menu">BUSINESS</a>
                             <ul class="lnb">
                                 <li><a href="#">판매 현황</a></li>
-                                <li><a href="#">서점 마케팅 현황</a></li>
+                                <li><a href="#">서점 마케팅</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#">고객센터</a>
+                            <a href="#" class="main-menu">CONTACT</a>
                             <ul class="lnb">
+                                <li><a href="#">자주하는 질문</a></li>
                                 <li><a href="#">고객문의</a></li>
-                                <li><a href="#">FAQ</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
-                <!-- /#gnb -->
             </div>
+            <div class="subMenuBg"></div>
             <!-- /#gnb -->
+            <div class="login">
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+            </div>
         </div>
+        
     </header>
     <!-- /header -->
     <section>
+        <div class="slide">
+
+        </div>
         <div class="main-wrap">
             <div id="main">
-
+                <div class="main1">
+                    <h2>한솜 출판사</h2>
+                </div>
+                <div class="main2">
+                    <h2>띠앗</h2>
+                </div>
             </div>
             <!-- /#main -->
         </div>
@@ -107,6 +123,6 @@
     </footer>
     
 
-    <script src="script/index-faq.js"></script>
+    <script src="script/header.js"></script>
 </body>
 </html>
