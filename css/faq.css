@@ -1,0 +1,10 @@
+.cs-main{
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+.cs-main-wrap {
+    height: 300px;
+    background: url(../images/cs-img.png) no-repeat center/cover;
+}
