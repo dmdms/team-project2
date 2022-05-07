@@ -9,11 +9,279 @@ a, a:link {
     text-decoration: none;
     color: inherit;
 }
-ul {
+body {
+    background: white;
+    color: black;
+    font-family: "Noto Sans KR", sans-serif;
+
+}
+a, a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
     list-style: none;
 }
-
-body {
-    color: black;
+.d-none {
+    display: none;
 }
 
+/* === header === */
+header {
+    position: relative;
+}
+.logo img{
+    width: 230px;
+}
+.header-wrap {
+    height: 100px;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+}
+.login {
+    display: flex;
+    margin: 0 0 40px 0;
+    font-size: 14px;
+    column-gap: 15px;
+    font-size: .9rem;
+}
+.gnb-wrap {
+    text-align: center;
+}
+#gnb {
+    width: 100%;
+    display: flex;
+    column-gap: 5rem;
+    margin-top: 2%;
+    font-size: 20px;
+    text-align: center;
+}
+#gnb > li {
+    position: relative;
+    width: 120px;
+}
+#gnb > li > a {
+    display: block;
+    text-align: center;
+}
+.main-menu{
+    padding-bottom: 20px;
+}
+.on {
+    color: #2d93fc !important;
+    border-bottom: 2px solid #2d93fc;
+    transition: all ease-in-out .3s;
+}
+.sub {
+    font-weight: bold;
+}
+.lnb {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 1rem;
+}
+.lnb > li {
+    display: inline-block;
+    line-height: 2rem;
+    
+}
+/* .lnb li a:hover {
+    font-weight: bolder;
+} */
+.subMenuBg {
+    display: none;
+    position: absolute;
+    top: 100px; 
+    left: 0;
+    width: 100%; 
+    height: 150px;
+    background-color: white;
+}
+
+/* === footer === */
+footer {
+    width: 100%;
+    height: 200px;
+    background: #333;
+}
+.footer-wrap {
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    color: #cacaca;
+}
+.footer-logo img{
+    width: 230px;
+}
+.footer-menu {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.footer-menu ul{
+    display: flex;
+    column-gap: 20px;
+}
+.info {
+    font-size: .8rem;
+    line-height: 1.2rem;
+}
+
+/* --------------hansom page---------------- */
+.main-img {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+.main-img > img {
+    margin-top: 100px;
+}
+#main-section {
+    display: block;
+    margin: 150px 0;
+}
+.sidemenu {
+    max-width: 1200px;
+    display: flex;
+    justify-content: right;
+    margin: 1.5rem 0;
+}
+.hansom-wrap {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+.hansom-wrap > h2 {
+    text-align: center;
+    margin: 3rem 0;
+    font-size: 1.5rem;
+}
+.text1, .text2, .text3 {
+    margin: 2rem;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
+.container{
+    width: 700px;
+    margin: 5rem auto;
+}
+ul.tabs {
+    display: flex;
+    justify-content: space-between;
+}
+ul.tabs li{
+    background: none;
+    color: #222;
+    display: inline-block;
+    cursor: pointer;
+    border-top: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+}
+
+ul.tabs li.current{
+    background: #ededed;
+    color: #222;
+}
+
+.tab-content{
+    display: none;
+    background: #ededed;
+    border: 1px solid #e5e5e5;
+    height: 200px;
+    padding: 2rem 4rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.tab-content.current{
+    display: inherit;
+}
+
+/* --------------book_all page---------------- */
+.bookall-wrap {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+.book-tab {
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin: 150px auto;
+    margin-bottom: 50px;
+    border-bottom: 3px solid #e5e5e5;
+    font-size: 1.5rem;
+    padding: .5rem ;
+}
+.list-icon a.active {
+    color: black;
+}
+.list-icon a {
+    margin: 0 10px;
+    font-size: 1.8rem;
+    color: gray;
+}
+.book-list1 {
+    width: 880px;
+    margin: 2rem auto;
+    font-size: 0;
+}
+.book-list1 a {
+    display: inline-block;
+    margin: 1.5rem 10px;
+}
+.book-list1 img {
+    width: 200px;
+    height: 300px;
+}
+.book-list2 {
+    width: 880px;
+    margin: 2rem auto;
+}
+.book-list2 img {
+    width: 130px;
+    height: 200px;
+}
+.book1, .book2, .book3, .book4, .book5, 
+.book6, .book7, .book8, .book9, .book10, 
+.book11, .book12  {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    border-bottom: 3px solid #e5e5e5;
+    padding: 1.5rem;
+    align-items: center;
+    line-height: 2.5rem;
+}
+.book1 .book-info, .book2 .book-info, .book3 .book-info, .book4 .book-info, .book5 .book-info, 
+.book6 .book-info, .book7 .book-info, .book8 .book-info, .book9 .book-info, .book10 .book-info, 
+.book11 .book-info, .book12 .book-info{
+    display: block;
+    padding: 10px;
+    width: 500px;
+}
+.page {
+    width: 500px;
+    margin: 50px auto;
+    height: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    align-items: center;
+}
+.page a {
+    margin: 0 10px;
+}

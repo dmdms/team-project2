@@ -1,60 +1,162 @@
 <!DOCTYPE html>
 <html lang="ko">
-<he>
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>한솜소개</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-</he  ad>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/jquery-1.12.4.min.js"></script>
+</head>
+
 <body>
-    <header></header>
+    <header>
+        <div class="header-wrap">
+            <div class="logo-wrap">
+                <div class="logo">
+                    <a href="/"><img src="images/logo.png" alt="한솜"></a>
+                </div>
+            </div>
+            <!-- /.logo -->
+            <div class="nav">
+                <div class="gnb-wrap">
+                    <ul id="gnb">
+                        <li>
+                            <a href="#" class="main-menu">ABOUT HS</a>
+                            <ul class="lnb" >
+                                <li><a href="#">출판사 소개</a></li>
+                                <li><a href="#">편집인 소개</a></li>
+                                <li><a href="#">출판사 소식</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="main-menu">PUBLICATION</a>
+                            <ul class="lnb">
+                                <li><a href="#">자비 출판</a></li>
+                                <li><a href="#">자서전 출판</a></li>
+                                <li><a href="#">전자책 출판</a></li>
+                                <li><a href="#">출판 진행 과정</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="main-menu">BOOK</a>
+                            <ul class="lnb">
+                                <li><a href="#">도서 목록</a></li>
+                                <li><a href="#">신간 도서</a></li>
+                                <li><a href="#">분야별 도서</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="main-menu">BUSINESS</a>
+                            <ul class="lnb">
+                                <li><a href="#">판매 현황</a></li>
+                                <li><a href="#">서점 마케팅</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="main-menu">CONTACT</a>
+                            <ul class="lnb">
+                                <li><a href="#">자주하는 질문</a></li>
+                                <li><a href="#">고객문의</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subMenuBg"></div>
+            <!-- /#gnb -->
+            <div class="login">
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+            </div>
+        </div>
+        
+    </header>
+    <!-- /header -->
+
     <div class="main-img">
-        <img src="https://picsum.photos/1200/300" alt="placeholder">
+        <img src="images/hansom-main.png" alt="한솜소개">
     </div>
-    <section>
+    <section id="main-section">
         <div class="sidemenu">
             <p><a href="#">홈</a> > <a href="#">한솜소개</a> > <a href="#">출판사 소개</a></p>
         </div>
-        <h2>출판사 소개</h2>
-        <p>
-            안녕하십니까?<br>
-            한솜출판서비스 대표 김태봉(필명 김태일)입니다.<br>  
-            저희 출판사 홈페이지를 찾아주신 모든 분들께 진심으로 감사를 드립니다.<br>
-            저희 출판사는 도서출판 한솜미디어, 도서출판 띠앗, 풍자문학사 등 3개 출판사를 운영하고 있습니다.
-        </p>
-        <div class="tab">
-            <a href="#"><h3>한솜미디어</h3></a>
-            <a href="#"><h3>도서출판 띠앗</h3></a>
-            <a href="#"><h3>풍자문학사</h3></a>
-            <div class="sub-tab">
-                <p>종합출판사로 출판 분야로는 경영, 경제, 철학, 자연, 교양과학, 사회, 정치, 법, 외국어,
+        <div class="hansom-wrap">
+            <h2>출판사 소개</h2>
+            <p class="text1">
+                안녕하십니까?<br>
+                한솜출판서비스 대표 김태봉(필명 김태일)입니다.<br>
+                저희 출판사 홈페이지를 찾아주신 모든 분들께 진심으로 감사를 드립니다.<br>
+                저희 출판사는 도서출판 한솜미디어, 도서출판 띠앗, 풍자문학사 등 3개 출판사를 운영하고 있습니다.
+            </p>
+            <div class="container">
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="tab-1">한솜미디어</li>
+                    <li class="tab-link" data-tab="tab-2">도서출판 띠앗</li>
+                    <li class="tab-link" data-tab="tab-3">풍자문학사</li>
+                </ul>
+                <div id="tab-1" class="tab-content current">
+                    종합출판사로 출판 분야로는 경영, 경제, 철학, 자연, 교양과학, 사회, 정치, 법, 외국어,
                     컴퓨터, 인터넷 등에 비중을 두고 있으며 현재 550여 종의 도서가 출판이 되었습니다.
-                    출판된 도서 중 일부 교보문고 베스트셀러 및 선정되기도 하였습니다.</p>
-                <p>종합출판사로 출판분야로는 문학, 소설, 시. 에세이, 심리, 교육, 인물, 예술, 스포츠, 유아,
-                    아동  등에 비중을 두고 있으며 현재 380여 종이 출판이 되었습니다.</p>
-                <p>1년에 4회 발행되는 계간 잡지로 작품은 쓰셨지만 마땅히 발표할 곳이 없는 작가분들에게 등단의 기회를 드리는 순수 문예지입니다. 2002년 8월 28일에 창간하여 2013년 가을호
-                    현재까지 창간 15주년이 지나, 통권 61권이 발행되었습니다.</p>
+                    출판된 도서 중 일부 교보문고 베스트셀러 및 선정되기도 하였습니다.
+                </div>
+                <div id="tab-2" class="tab-content">
+                    종합출판사로 출판분야로는 문학, 소설, 시. 에세이, 심리, 교육, 인물, 예술, 스포츠, 유아,
+                    아동 등에 비중을 두고 있으며 현재 380여 종이 출판이 되었습니다.
+                </div>
+                <div id="tab-3" class="tab-content">
+                    1년에 4회 발행되는 계간 잡지로 작품은 쓰셨지만 마땅히 발표할 곳이 없는 작가분들에게 등단의 기회를 드리는 순수 문예지입니다. 2002년 8월 28일에 창간하여
+                    현재까지 창간 15주년이 지나, 통권 61권이 발행되었습니다.
+                </div>
             </div>
+            <p class="text2">
+                저희 출판사는 책을 출판하시려는 모든 분들을 환영합니다.<br>
+                자서전, 시집, 소설, 수필, 처세, 경영, 건강, 회사홍보를 위한 도서 등
+                장르에 구분 없는 종합출판사입니다.<br>
+                서울 및 경기지방 그리고 불러만 주시면 전국 어디든지 찾아가는 서비스로
+                혼신의 힘을 다하고 있는 열정적인 출판사입니다.
+            </p>
+            <p class="text3">
+                본 출판사의 대표는 1977년부터 30여년 간 오직 한 길로 신문사, 출판사의 영업 및 편집장, 작가로 활동하며
+                현재까지 활약하고 있습니다.<br> 현재는 중견출판사로 자리를 잡았고,
+                그 결실로 잡지사인 <풍자문학>, 도서출판 <띠앗>, <한솜미디어>, <한솜출판서비스> 등을 함께 운영하고 있습니다.
+            </p>
         </div>
-        <p>
-            저희 출판사는 책을 출판하시려는 모든 분들을 환영합니다.<br>
-            자서전, 시집, 소설, 수필, 처세, 경영, 건강, 회사홍보를 위한 도서 등
-            장르에 구분 없는 종합출판사입니다.<br>
-            서울 및 경기지방 그리고 불러만 주시면 전국 어디든지 찾아가는 서비스로
-            혼신의 힘을 다하고 있는 열정적인 출판사입니다.
-        </p>
-        <p>
-            본 출판사의 대표는 1977년부터 30여년 간 오직 한 길로 신문사, 출판사의 영업 및 편집장, 작가로 활동하며 
-            현재까지 활약하고 있습니다.<br> 현재는 중견출판사로 자리를 잡았고,
-            그 결실로 잡지사인 <풍자문학>, 도서출판 <띠앗>, <한솜미디어>, <한솜출판서비스> 등을
-            함께 운영하고 있습니다. 
-        </p>
     </section>
-    <footer></footer>
+
+    <footer>
+        <div class="footer-wrap">
+            <div class="footer-logo"><a href="/"><img src="images/footer-logo.png" alt="로고2"></a></div>
+            <!-- /.footer-logo -->
+                <div class="info-wrap">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보 처리방침</a></li>
+                            <li><a href="#">사이트맵</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.footer-menu -->
+                    <address>
+                        <div class="info">
+                            <p class="name">상호명 : 도서출판 띠앗 / 한솜미디어 | 대표 : 김태봉 | 주소 : (우)05044 서울시 광진구 아차산로 413(구의동243-22)</p>
+                            <p class="call">사업자등록 번호 : 206-91-58786 | 전화 : 02-499-4486 | 팩스 : 02-454-0493</p>
+                            <p class="email">원고 전송 이메일 : poongja2002@naver.com</p>
+                            <p class="copyright">Copyright &copy; 2022 hansom All rights reserved.</p>
+                        </div>
+                    </address>
+                </div>
+        </div>
+    </footer>
+
+    <script src="script/hansom.js"></script>
 </body>
+
 </html>

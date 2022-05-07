@@ -1,18 +1,277 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>도서정보</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/jquery-1.12.4.min.js"></script>
 </head>
+
 <body>
-    <header></header>
-    <div class="main-img"></div>
-    <section>
-        <h2>도서목록</h2>
-        
+    <header>
+        <div class="header-wrap">
+            <div class="logo-wrap">
+                <div class="logo">
+                    <a href="/"><img src="images/logo.png" alt="한솜"></a>
+                </div>
+            </div>
+            <!-- /.logo -->
+            <div class="nav">
+                <div class="gnb-wrap">
+                    <ul id="gnb">
+                        <li>
+                            <a href="#" class="main-menu">ABOUT HS</a>
+                            <ul class="lnb">
+                                <li><a href="#">출판사 소개</a></li>
+                                <li><a href="#">편집인 소개</a></li>
+                                <li><a href="#">출판사 소식</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="main-menu">PUBLICATION</a>
+                            <ul class="lnb">
+                                <li><a href="#">자비 출판</a></li>
+                                <li><a href="#">자서전 출판</a></li>
+                                <li><a href="#">전자책 출판</a></li>
+                                <li><a href="#">출판 진행 과정</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="main-menu">BOOK</a>
+                            <ul class="lnb">
+                                <li><a href="#">도서 목록</a></li>
+                                <li><a href="#">신간 도서</a></li>
+                                <li><a href="#">분야별 도서</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="main-menu">BUSINESS</a>
+                            <ul class="lnb">
+                                <li><a href="#">판매 현황</a></li>
+                                <li><a href="#">서점 마케팅</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="main-menu">CONTACT</a>
+                            <ul class="lnb">
+                                <li><a href="#">자주하는 질문</a></li>
+                                <li><a href="#">고객문의</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subMenuBg"></div>
+            <!-- /#gnb -->
+            <div class="login">
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+            </div>
+        </div>
+
+    </header>
+    <!-- /header -->
+
+    <div class="main-img">
+        <img src="images/bookall-main.png" alt="도서정보">
+    </div>
+    <section id="main-section">
+        <div class="sidemenu">
+            <p><a href="#">홈</a> > <a href="#">도서정보</a> > <a href="#">도서목록</a></p>
+        </div>
+
+        <div class="bookall-wrap">
+            <div class="book-tab">
+                <p class="title">도서목록</p>
+                <div class="list-icon">
+                    <a href="#" class="active"><i class="fa-solid fa-square"></i></a>
+                    <a href="#"><i class="fa-solid fa-list"></i></a>
+                </div>
+            </div>
+            <div class="book-list1">
+                <a href="#"><img src="images/book1.jpeg" alt="book1"></a>
+                <a href="#"><img src="images/book2.jpeg" alt="book2"></a>
+                <a href="#"><img src="images/book3.jpeg" alt="book3"></a>
+                <a href="#"><img src="images/book4.jpeg" alt="book4"></a>
+                <a href="#"><img src="images/book5.jpeg" alt="book5"></a>
+                <a href="#"><img src="images/book6.jpeg" alt="book6"></a>
+                <a href="#"><img src="images/book7.jpeg" alt="book7"></a>
+                <a href="#"><img src="images/book8.jpeg" alt="book8"></a>
+                <a href="#"><img src="images/book9.jpeg" alt="book9"></a>
+                <a href="#"><img src="images/book10.jpeg" alt="book10"></a>
+                <a href="#"><img src="images/book11.jpeg" alt="book11"></a>
+                <a href="#"><img src="images/book12.jpeg" alt="book12"></a>
+            </div>
+            <div class="book-list2 d-none">
+                <div class="book1">
+                    <a href="#"><img src="images/book1.jpeg" alt="book1"></a>
+                    <ul class="book-info">
+                        <li><a href="#">제목 : 네오 씽킹 이기는 사람들의 창의력</a></li>
+                        <li><a href="#">저자 : 왕짼 저 / 전태현 역 </a></li>
+                        <li><a href="#">분야 : 자기계발 > 처세술/삶의 자세</a></li>
+                        <li><a href="#">출판사 : 한솜미디어</a></li>
+                        <li><a href="#">발행일 : 2011년 04월 20일</a></li>
+                    </ul>
+                </div>
+                <div class="book2">
+                    <a href="#"><img src="images/book2.jpeg" alt="book2"></a>
+                    <ul class="book-info">
+                        <li><a href="#">제목 : 맥킨지식 문서력</a></li>
+                        <li><a href="#">저자 : 이호철</a></li>
+                        <li><a href="#">분야 : 경제경영 > 자기계발 > 비즈니스능력개발</a></li>
+                        <li><a href="#">출판사 : 비즈센</a></li>
+                        <li><a href="#">발행일 : 2009년 10월 30일</a></li>
+                    </ul>
+                </div>
+                <div class="book3">
+                    <a href="#"><img src="images/book3.jpeg" alt="book3"></a>
+                    <ul class="book-info">
+                        <li><a href="#">제목 : 무엇이 나를 만드는가</a></li>
+                        <li><a href="#">저자 : 이준연</a></li>
+                        <li><a href="#">분야 : 에세이 > 한국 에세이</a></li>
+                        <li><a href="#">출판사 : 한솜미디어</a></li>
+                        <li><a href="#">발행일 : 2020년 07월 10일</a></li>
+                    </ul>
+                </div>
+                <div class="book4">
+                    <a href="#"><img src="images/book4.jpeg" alt="book4"></a>
+                    <ul class="book-info">
+                        <li><a href="#">제목 : 바이칼 호수 가는 길</a></li>
+                        <li><a href="#">저자 : 조민행</a></li>
+                        <li><a href="#">분야 : 여행 > 해외여행 > 러시아/a></li>
+                        <li><a href="#">출판사 : 한솜미디어</a></li>
+                        <li><a href="#">발행일 : 2013년 01월 20일</a></li>
+                    </ul>
+                </div>
+                <div class="book5">
+                    <a href="#"><img src="images/book5.jpeg" alt="book5"></a>
+                    <ul class="book-info">
+                        <li><a href="#">제목 : 정신의학자가 분석한 화이트 오바마</a></li>
+                        <li><a href="#">저자 : 장경준</a></li>
+                        <li><a href="#">분야 : 대학교재 > 의약학/간호 계열 > 의학 > 임상각과</a></li>
+                        <li><a href="#">출판사 : 한솜미디어</a></li>
+                        <li><a href="#">발행일 : 2011년 07월 25일</a></li>
+                    </ul>
+                </div>
+                <div class="book6">
+                    <a href="#"><img src="images/book6.jpeg" alt="book6"></a>
+                    <ul class="book-info">
+                        <li><a href="#">제목 : 비밀의 언어</a></li>
+                        <li><a href="#">저자 : 진원</a></li>
+                        <li><a href="#">분야 : 인문 > 철학/사상 > 쉽게 읽는 철학/대중철학</a></li>
+                        <li><a href="#">출판사 : 한솜미디어</a></li>
+                        <li><a href="#">발행일 : 2011년 03월 15일</a></li>
+                    </ul>
+                </div>
+                <div class="book7">
+                    <a href="#"><img src="images/book7.jpeg" alt="book7"></a>
+                    <ul class="book-info">
+                        <li><a href="#">제목 : 소셜 월드 SOCIAL WORLD</a></li>
+                        <li><a href="#">저자 : 이주현</a></li>
+                        <li><a href="#">분야 : 경제 경영 > 마케팅/세일즈 > 트렌드/미래예측</a></li>
+                        <li><a href="#">출판사 : 한솜미디어</a></li>
+                        <li><a href="#">발행일 : 2012년 07월 07일</a></li>
+                    </ul>
+                </div>
+                <div class="book8">
+                    <a href="#"><img src="images/book8.jpeg" alt="book8"></a>
+                    <ul class="book-info">
+                        <li><a href="#">제목 : 야생동물 수의사와 함께하는 지구별 야생동물 탐방기</a></li>
+                        <li><a href="#">저자 : 이하늬</a></li>
+                        <li><a href="#">분야 : 여행 > 여행에세이</a></li>
+                        <li><a href="#">출판사 : 한솜미디어</a></li>
+                        <li><a href="#">발행일 : 2018년 04월 10일</a></li>
+                    </ul>
+                </div>
+                <div class="book9">
+                    <a href="#"><img src="images/book9.jpeg" alt="book9"></a>
+                    <ul class="book-info">
+                        <li><a href="#">제목 : STEP BY STEP ACCORDION STEP 1</a></li>
+                        <li><a href="#">저자 : 김지연, 이선용 공저</a></li>
+                        <li><a href="#">분야 : 예술 > 음악 > 악기/악보집 > 현악기/관악기악보</a></li>
+                        <li><a href="#">출판사 : 한솜미디어</a></li>
+                        <li><a href="#">발행일 : 2017년 03월 30일</a></li>
+                    </ul>
+                </div>
+                <div class="book10">
+                    <a href="#"><img src="images/book10.jpeg" alt="book10"></a>
+                    <ul class="book-info">
+                        <li><a href="#">제목 : 연결고리# 영어 1</a></li>
+                        <li><a href="#">저자 : 황영준 </a></li>
+                        <li><a href="#">분야 : 국어 외국어 사전 > 영어 > 영어 독해/문법/작문/번역</a></li>
+                        <li><a href="#">출판사 : 한솜미디어</a></li>
+                        <li><a href="#">발행일 : 2015년 09월 08일</a></li>
+                    </ul>
+                </div>
+                <div class="book11">
+                    <a href="#"><img src="images/book11.jpeg" alt="book11"></a>
+                    <ul class="book-info">
+                        <li><a href="#">제목 : 참아라 참는만큼 이긴다</a></li>
+                        <li><a href="#">저자 : 김해원</a></li>
+                        <li><a href="#">분야 : 자기계발 > 인간관계 > 인간관계 일반</a></li>
+                        <li><a href="#">출판사 : 한솜미디어</a></li>
+                        <li><a href="#">발행일 : 2012년 11월 05일</a></li>
+                    </ul>
+                </div>
+                <div class="book12">
+                    <a href="#"><img src="images/book12.jpeg" alt="book12"></a>
+                    <ul class="book-info">
+                        <li><a href="#">제목 : 다이어트 종결습관</a></li>
+                        <li><a href="#">저자 : 정미용 </a></li>
+                        <li><a href="#">분야 : 건강 취미 > 다이어트/미용</a></li>
+                        <li><a href="#">출판사 : 한솜미디어</a></li>
+                        <li><a href="#">발행일 : 2013년 10월 15일</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page">
+            <a href="#"><i class="fa-solid fa-angles-left"></i></a>
+            <a href="#"><i class="fa-solid fa-angle-left"></i></a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+            <a href="#"><i class="fa-solid fa-angles-right"></i></a>
+        </div>
     </section>
-    <footer></footer>
+
+    <footer>
+        <div class="footer-wrap">
+            <div class="footer-logo"><a href="/"><img src="images/footer-logo.png" alt="로고2"></a></div>
+            <!-- /.footer-logo -->
+            <div class="info-wrap">
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+                </div>
+                <!-- /.footer-menu -->
+                <address>
+                    <div class="info">
+                        <p class="name">상호명 : 도서출판 띠앗 / 한솜미디어 | 대표 : 김태봉 | 주소 : (우)05044 서울시 광진구 아차산로 413(구의동243-22)</p>
+                        <p class="call">사업자등록 번호 : 206-91-58786 | 전화 : 02-499-4486 | 팩스 : 02-454-0493</p>
+                        <p class="email">원고 전송 이메일 : poongja2002@naver.com</p>
+                        <p class="copyright">Copyright &copy; 2022 hansom All rights reserved.</p>
+                    </div>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/hansom.js"></script>
 </body>
+
 </html>
