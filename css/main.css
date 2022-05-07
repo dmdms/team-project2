@@ -1,10 +1,82 @@
 .main1 {
     width: 100%;
     height: 900px;
-    background: url(../images/main-back1.jpg) no-repeat center/cover;
+    position: relative;
+    background: url(../images/main-back1.png) no-repeat center/cover;
+    padding-top: 100px;
+}
+.main1-text {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin-top: 15rem;
+    justify-content: center;
+}
+.main1-text h2{  
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.main1-text p {
+    font-size: 40px;
 }
 .main2 {
     width: 100%;
     height: 880px;
     background: url(../images/main-back2.jpg) no-repeat center/cover;
+}
+.main3{
+    width: 100%;
+    background: #F5F5F5;
+
+}
+.main3-bg {
+    position: relative;
+    padding-top: 1rem;
+}
+.main3-text{
+    position: absolute;
+    padding: 15em 0 0 27rem;
+}
+.main3-text h3{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.main3-text p {
+    font-size: 30px;
+}
+.books-wrap{
+    text-align: center;
+    padding: 13rem 30px 3rem 30px;
+}
+.books-wrap h3 {
+    text-align: left;
+    font-size: 30px;
+    margin: 0 42rem 3rem 22rem;
+    padding: 0 0 0 15px;
+    border-left: 6px solid #0065ca;
+}
+.main-books {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-books img{
+    margin: 0 20px;
+}
+.main-books p {
+    margin-top: 25px;
+}
+.main-books img:hover  {
+    transform : scale(1.1);
+    transition: all .3s ease-out;
+}
+.main-button button{
+    margin: 7rem 0 7rem 0;
+    border: 0;
+    background: #333;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 50px;
 }
