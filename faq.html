@@ -4,15 +4,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>한솜 출판사</title>
     <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="script/jquery-1.12.4.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="cs-main-wrap">
-    <div class="cs-main">
-        <h2>고객센터</h2>
+<header>
+    <div class="header-wrap">
+        <div class="logo-wrap">
+            <div class="logo">
+                <a href="/"><img src="images/logo.png" alt="한솜"></a>
+            </div>
+        </div>
+        <!-- /.logo -->
+        <div class="nav">
+            <div class="gnb-wrap">
+                <ul id="gnb">
+                    <li>
+                        <a href="#" class="main-menu">ABOUT HS</a>
+                        <ul class="lnb" >
+                            <li><a href="#">출판사 소개</a></li>
+                            <li><a href="#">편집인 소개</a></li>
+                            <li><a href="#">출판사 소식</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="main-menu">PUBLICATION</a>
+                        <ul class="lnb">
+                            <li><a href="#">자비 출판</a></li>
+                            <li><a href="#">자서전 출판</a></li>
+                            <li><a href="#">전자책 출판</a></li>
+                            <li><a href="#">출판 진행 과정</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="main-menu">BOOK</a>
+                        <ul class="lnb">
+                            <li><a href="#">도서 목록</a></li>
+                            <li><a href="#">신간 도서</a></li>
+                            <li><a href="#">분야별 도서</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="main-menu">BUSINESS</a>
+                        <ul class="lnb">
+                            <li><a href="#">판매 현황</a></li>
+                            <li><a href="#">서점 마케팅</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="main-menu">CONTACT</a>
+                        <ul class="lnb">
+                            <li><a href="#">자주하는 질문</a></li>
+                            <li><a href="#">고객문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="subMenuBg"></div>
+        <!-- /#gnb -->
+        <div class="login">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+        </div>
     </div>
-</div>
     
+</header>
+<!-- /header -->
+<section>
+    <div class="cs-main">
+        <div class="cs-main-wrap">
+            <h2>고객센터</h2>
+        </div>
+    </div>
+    <h2>자주하는 질문</h2>
+    <p>원고중계나 출판에 대해 질문한 내용중 빈도수가 많거나 꼭 알아야할 것들을 모아놓았습니다.</p>
+    <hr>
+    <div class="faq-top">
+        <p>FAQ</p>
+        <div class="icons">
+            <a href="#"><img src="images/search.png" alt="검색"></a>
+            <a href="#"><img src="images/write.png" alt="작성"></a>
+        </div>
+        <!-- /.icons -->
+    </div>
+    <!-- /.faq-top -->
+    <div class="faq">
+        <ul class="faq-list">
+            <li><a href="#">Q. 한솜이 저자에게 책을 적게 주려고 하는 이유</a></li>
+            <li><a href="#">Q. 제목은 어떻게 정하나요?</a></li>
+            <li><a href="#">Q. 표지디자인이나 본문디자인에 저자의 생각을 반영합니까?</a></li>
+            <li><a href="#">Q. 소설 자비출간에 대해...</a></li>
+            <li><a href="#">Q. 자비출판시 편집은</a></li>
+            <li><a href="#">Q. 출판과 판매는 다른건가요?</a></li>
+            <li><a href="#">Q. 판매대행만도 하나요?</a></li>
+        </ul>
+        <ul class="faq-page">
+            <li><a href="#">&lt;&lt;</a></li>
+            <li><a href="#">&lt;</a></li>
+            <li class="pageNum"><a href="#"><p>1</p></a></li>
+            <li class="pageNum"><a href="#"><p>2</p></a></li>
+            <li class="pageNum"><a href="#"><p>3</p></a></li>
+            <li><a href="#">&gt;</a></li>
+            <li><a href="#">&gt;&gt;</a></li>
+        </ul>
+        <!-- /.faq-list -->
+    </div>
+    <!-- /.faq -->
+
+
+</section>
+<footer>
+    <div class="footer-wrap">
+        <div class="footer-logo"><a href="/"><img src="images/footer-logo.png" alt="로고2"></a></div>
+        <!-- /.footer-logo -->
+            <div class="info-wrap">
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+                </div>
+                <!-- /.footer-menu -->
+                <address>
+                    <div class="info">
+                        <p class="name">상호명 : 도서출판 띠앗 / 한솜미디어 | 대표 : 김태봉 | 주소 : (우)05044 서울시 광진구 아차산로 413(구의동243-22)</p>
+                        <p class="call">사업자등록 번호 : 206-91-58786 | 전화 : 02-499-4486 | 팩스 : 02-454-0493</p>
+                        <p class="email">원고 전송 이메일 : poongja2002@naver.com</p>
+                        <p class="copyright">Copyright &copy; 2022 hansom All rights reserved.</p>
+                    </div>
+                </address>
+            </div>
+    </div>
+</footer>
+
+
+<script src="script/header.js"></script>
 </body>
 </html>
