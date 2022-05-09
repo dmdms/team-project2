@@ -313,24 +313,35 @@ ul.tabs li.current{
     margin: 0 10px;
 }
 
-@media screen and (max-width: 420px){
-    html {
-        height: 100vh; /* 또는 100%, vh:viewport height */
+@media screen and (max-width: 425px){
+    .header-wrap {
+        width: 425px;
+    }
+    .logo-wrap {
+        width: 100%;
+    }
+    .logo{
+        position: absolute;
+        transform: translate(-50% , -50%);
+        top: 50%;
+        left: 50%; 
+        margin: 0 auto;
     }
     .logo img {
-        width: 230px;
-        height: 50px;
+        width: 150px;
     }
-    .login {
-        float: right;
+    .menu_bar{
+        display: block;
+        position: absolute;
+        color: #333;
+        right: 10%;
+        font-size: 1.5rem;
+        top: 32%;
     }
-    .gnb-wrap {
+    .nav, .login {
         display: none;
     }
-    .nav-bar{
-        display: block;
-    }
-    .nav-x {
+    .menu_x{
         display: none;
     }
     .main-img {
@@ -393,27 +404,23 @@ ul.tabs li.current{
     .tab-cont.current{
         display: inherit;
     }
-
-    .footer-wrap {
+    .footer-wrap{
         width: 100%;
-        background: #333;
-        margin: 0 auto;
-        color: #cacaca;
-        height: 200px;
+    }
+    .info-wrap {
+        width: 300px;
         text-align: center;
     }
     .footer-logo {
         display: none;
     }
     .footer-menu {
-        font-size: .8rem;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
     }
     .info {
-        display: block;
-        width: 100%;
-        font-size: .5rem;
-        line-height: 1.2rem;
-        padding: 2rem;
+        font-size: 11px;
     }
 
 }
