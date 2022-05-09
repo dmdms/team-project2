@@ -1,7 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&display=swap');
 body {
     background: white;
     color: black;
+       font-family: 'Noto Sans KR', sans-serif !important;
+
 
 }
 a, a:link {
@@ -16,60 +18,90 @@ ul, ol {
 
 /* === header === */
 header {
-    height: 267px;
-    text-align: center;
     position: relative;
-    
+}
+.logo img{
+    width: 230px;
 }
 .header-wrap {
-    width: 1200px;
-    margin: 0 auto;
+    height: 100px;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
 }
 .login {
-    margin: 10px 0;
-    text-align: right;
+    display: flex;
+    margin: 0 0 40px 0;
     font-size: 14px;
+    column-gap: 15px;
+    font-size: .9rem;
+}
+.gnb-wrap {
+    text-align: center;
 }
 #gnb {
+    width: 100%;
     display: flex;
-    margin: 3rem auto;
-    justify-content: center;
-    column-gap: 2rem;
-    width: 590px;
-    padding: 6px 0;
-    border: 2px solid #597bc0;
-    position: relative;
+    column-gap: 5rem;
+    margin-top: 2%;
+    font-size: 20px;
+    text-align: center;
 }
 #gnb > li {
-    border: 1px solid #597bc0;
-    background: #597bc0;
-    color: white;
-    padding: 5px 10px;
+    position: relative;
+    width: 120px;
 }
-
-#active {
-    width: 1200px;
-    margin: .2rem 0;
-    padding: 1rem 2rem;
-    display: flex;
-    position: absolute;
-    color: black;
-    column-gap: 3rem;
-    border: 2px solid #597bc0;
-    background: white;
-    justify-content: center;
+#gnb > li > a {
+    display: block;
+    text-align: center;
+}
+.main-menu{
+    padding-bottom: 20px;
+}
+.on {
+    color: #2d93fc !important;
+    border-bottom: 2px solid #2d93fc;
+}
+.sub {
+    font-weight: bold;
 }
 .lnb {
     display: none;
     position: absolute;
+    z-index: 1000;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 1rem;
 }
+.lnb > li {
+    display: inline-block;
+    line-height: 2rem;
+    
+}
+.lnb li a:hover {
+    font-weight: bolder;
+}
+.subMenuBg {
+    display: none;
+    position: absolute;
+    top: 100px; 
+    left: 0;
+    width: 100%; 
+    height: 150px;
+    background-color: white;
+    }
 
 
 /* === footer === */
 footer {
     width: 100%;
     height: 200px;
-    background: #597bc0;
+    background: #333;
 }
 .footer-wrap {
     width: 1200px;
@@ -78,7 +110,10 @@ footer {
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-    color: white;
+    color: #cacaca;
+}
+.footer-logo img{
+    width: 230px;
 }
 .footer-menu {
     font-size: 16px;
@@ -89,5 +124,6 @@ footer {
     column-gap: 20px;
 }
 .info {
-    font-size: 14px;
+    font-size: .8rem;
+    line-height: 1.2rem;
 }
