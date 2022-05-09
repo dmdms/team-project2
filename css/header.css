@@ -31,7 +31,6 @@ header {
     font-size: 14px;
 }
 #gnb {
-    width: 1200px;
     display: flex;
     margin: 3rem auto;
     justify-content: center;
@@ -39,26 +38,32 @@ header {
     width: 590px;
     padding: 6px 0;
     border: 2px solid #597bc0;
+    position: relative;
 }
 #gnb > li {
     border: 1px solid #597bc0;
     background: #597bc0;
     color: white;
     padding: 5px 10px;
-
 }
+
 #active {
-    width: 100%;
-    margin: 1.7rem 0;
+    width: 1200px;
+    margin: .2rem 0;
+    padding: 1rem 2rem;
     display: flex;
     position: absolute;
     color: black;
     column-gap: 3rem;
     border: 2px solid #597bc0;
+    background: white;
+    justify-content: center;
 }
 .lnb {
     display: none;
+    position: absolute;
 }
+
 
 /* === footer === */
 footer {
@@ -76,10 +81,13 @@ footer {
     color: white;
 }
 .footer-menu {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 20px;
 }
 .footer-menu ul{
     display: flex;
     column-gap: 20px;
+}
+.info {
+    font-size: 14px;
 }
