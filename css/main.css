@@ -111,3 +111,90 @@
     transition: all .2s ease-out;
 
 }
+
+/* media */
+@media screen and (max-width: 420px){
+    .header {
+        width: 100%;
+    }
+    .logo{
+        position: absolute;
+        transform: translate(-95% , -70%);
+        top: 50%;
+        left: 50%;
+        margin: 0 auto;
+    }
+    .logo img {
+        width: 150px;
+    }
+    .nav, .login {
+        display: none;
+    }
+    .menu_bar{
+        display: block;
+        position: absolute;
+        color: #333;
+        right: 33%;
+        font-size: 1.5rem;
+        top: 9%;
+    }
+    .menu_x{
+        display: none;
+    }
+    .main-wrap{
+        width: 100%;
+    }
+    .main1-text {
+        margin: 0 auto;
+        padding: 1rem 0 0 15%;
+        width: 200px;
+    }
+    .main1 {
+        width: 100%;
+        height: 224px;
+    }
+    .main1-text h2 {
+        font-size: 20px;
+    }
+    .main1-text p {
+        font-size: 16px;
+    }
+    .main2 {
+        width: 100%;
+        height: 300px;
+    }
+    .main2-title {
+        font-size: 16px;
+    }
+    .main2-text{
+        font-size: 12px;
+    }
+    .main-bg img{
+        display: none;
+    }
+    .main3 {
+        width: 100%;
+    }
+    .main3-text {
+        display: none;
+    }
+    .main3-text h2{
+        font-size: 20px;
+    }
+    .books-wrap {
+        width: 100%;
+    }
+    .books-wrap h3 {
+        font-size: 16px
+    }
+    .books-wrap img{
+        /* display: none; */
+        width: 100px;
+    }
+    .main-books p {
+        font-size: 10px;
+    }
+    .footer-wrap{
+        width: 100%;
+    }
+}
