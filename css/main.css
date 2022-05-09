@@ -113,15 +113,18 @@
 }
 
 /* media */
-@media screen and (max-width: 420px){
-    .header {
+@media screen and (max-width: 425px){
+    .header-wrap {
+        width: 425px;
+    }
+    .logo-wrap {
         width: 100%;
     }
     .logo{
         position: absolute;
-        transform: translate(-95% , -70%);
+        transform: translate(-50% , -50%);
         top: 50%;
-        left: 50%;
+        left: 50%; 
         margin: 0 auto;
     }
     .logo img {
@@ -134,9 +137,9 @@
         display: block;
         position: absolute;
         color: #333;
-        right: 33%;
+        right: 10%;
         font-size: 1.5rem;
-        top: 9%;
+        top: 32%;
     }
     .menu_x{
         display: none;
@@ -160,32 +163,53 @@
         font-size: 16px;
     }
     .main2 {
-        width: 100%;
+        width: 425px;
         height: 300px;
+    }
+    .main2-wrap {
+        width: 425px;
+        margin: 0 auto;
+        padding: 20px 0;
     }
     .main2-title {
         font-size: 16px;
+        padding-left: 280px;
     }
     .main2-text{
+        margin-right: 10px;
         font-size: 12px;
+        padding-left: 280px;
+    }
+    .main2-button {
+        padding-top: 90px;
+        margin-right: 30px;
+    }
+    .main2-button button{
+        font-size: 10px;
+        
     }
     .main-bg img{
-        display: none;
+        width: 100px;
     }
     .main3 {
         width: 100%;
     }
     .main3-text {
-        display: none;
+        /* display: none; */
     }
-    .main3-text h2{
+    .main3-text h3{
         font-size: 20px;
+    }
+    .main3-text p{
+        font-size: 10px;
     }
     .books-wrap {
         width: 100%;
+        padding: 20px 0;
     }
     .books-wrap h3 {
-        font-size: 16px
+        font-size: 16px;
+        margin: 20px 0 20px 10px;
     }
     .books-wrap img{
         /* display: none; */
@@ -196,5 +220,20 @@
     }
     .footer-wrap{
         width: 100%;
+    }
+    .info-wrap {
+        width: 300px;
+        text-align: center;
+    }
+    .footer-logo {
+        display: none;
+    }
+    .footer-menu {
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+    }
+    .info {
+        font-size: 11px;
     }
 }
