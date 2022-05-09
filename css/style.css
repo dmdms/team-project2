@@ -39,6 +39,12 @@ header {
     align-items: center;
     background: white;
 }
+.menu_bar {
+    display: none;
+}
+.menu_x {
+    display: none;
+}
 .login {
     display: flex;
     margin: 0 0 40px 0;
