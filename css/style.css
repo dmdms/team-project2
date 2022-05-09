@@ -107,6 +107,12 @@ header {
     height: 150px;
     background-color: white;
 }
+.nav-bar {
+    display: none;
+}
+.nav-x {
+    display: none;
+}
 
 /* === footer === */
 footer {
@@ -213,11 +219,12 @@ ul.tabs li.current{
     font-size: 1.2rem;
     line-height: 2rem;
 }
-
 .tab-content.current{
     display: inherit;
 }
-
+.tabs-m {
+    display: none;
+}
 /* --------------book_all page---------------- */
 .book-img {
     background: url(../images/book-main.png) no-repeat center/cover;
@@ -310,4 +317,103 @@ ul.tabs li.current{
     html {
         height: 100vh; /* 또는 100%, vh:viewport height */
     }
-    
+    .logo img {
+        width: 230px;
+        height: 50px;
+    }
+    .login {
+        float: right;
+    }
+    .gnb-wrap {
+        display: none;
+    }
+    .nav-bar{
+        display: block;
+    }
+    .nav-x {
+        display: none;
+    }
+    .main-img {
+        background: #333;
+        height: 90px;
+    }
+    .main-img h2 {
+        text-align: center;
+        font-size: 30px;
+        margin: 15px 0;
+        padding: 10px 0;
+        color: white;
+        background: none;
+        font-weight: normal;
+    }
+    .sidemenu {
+        margin: 2rem 0;
+        display: flex;
+        position: absolute;
+        left: 5%;
+    }
+    .hansom-wrap {
+        margin: 7rem auto; 
+    }
+    .hansom-wrap > h2 {
+        text-align: center;
+        margin: 3rem 0;
+        font-size: 1.5rem;
+    }
+    .container {
+        display: none;
+    }
+    .text1, .text2, .text3 {
+        font-size: 1rem;
+    }
+    .tabs-m {
+        display: block;
+        font-size: 3rem;
+    }
+    .tabs-m li {
+        display: flex;
+        justify-content: center;
+        column-gap: 50px;
+        align-items: center;
+        margin: 50px 0;
+    }
+    .tabs-m li img {
+        width: 230px;
+    }
+    .tabs-m li.current{
+        color: #2b6bac;
+    }
+    .tab-cont{
+        display: none;
+        height: 200px;
+        padding: 0 4rem;
+        font-size: .9rem;
+        line-height: 2rem;
+    }
+    .tab-cont.current{
+        display: inherit;
+    }
+
+    .footer-wrap {
+        width: 100%;
+        background: #333;
+        margin: 0 auto;
+        color: #cacaca;
+        height: 200px;
+        text-align: center;
+    }
+    .footer-logo {
+        display: none;
+    }
+    .footer-menu {
+        font-size: .8rem;
+    }
+    .info {
+        display: block;
+        width: 100%;
+        font-size: .5rem;
+        line-height: 1.2rem;
+        padding: 2rem;
+    }
+
+}

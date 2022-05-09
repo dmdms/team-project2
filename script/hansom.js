@@ -2,6 +2,7 @@ $(function(){
     tab();
     booklist();
     mainNav();
+    mobiletab();
 });
 function mainNav(){
     $("#gnb > li").mouseenter(function(){
@@ -43,5 +44,16 @@ function tab(){
 
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
-	})
+	});
+}
+function mobiletab(){	
+	$('.tabs-m li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('.tabs-m li').removeClass('current');
+		$('.tab-cont').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	});
 }
