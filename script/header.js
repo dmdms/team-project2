@@ -4,11 +4,11 @@ $(function(){
 }); 
 
 function mainNav(){
-    $("#gnb > li, .subMenuBg").mouseenter(function(){
+    $("#gnb > li").mouseenter(function(){
         $(this).children("a").addClass("on");
         $(".lnb, .subMenuBg").stop().slideDown("fast")
     });
-    $("#gnb > li, .subMenuBg").mouseleave(function(){
+    $("#gnb > li").mouseleave(function(){
         $(this).children("a").removeClass("on");
         $(".lnb, .subMenuBg").stop().slideUp("fast")
     });

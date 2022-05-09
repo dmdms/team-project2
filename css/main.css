@@ -147,12 +147,6 @@
         left: 0;
         background: rgba(0, 0, 0, .5);
     }
-    #gnb {
-        display: block;
-        border-top: 1px solid white;
-        width: 100%;
-        padding-top: 30px;
-    }
     .nav {
         display: none;
         position: absolute;
@@ -165,15 +159,31 @@
         background-color: #333;
         padding: 100px 0 0 0;
     }
-    .nav li{
+    #gnb {
+        display: block;
+        border-top: 1px solid white;
+        width: 100%;
+        padding-top: 20px;
+    }
+    #gnb li{
         width: 100%;
         height: 50px;
         color: white;
         font-size: 15px;
         z-index: 8000;
+        padding-left: 2rem;
+        position: relative;
     }
-    .nav > li > a {
+    #gnb > li > a {
+        text-align: left;
         line-height: 50px;
+    }
+    .lnb > li{
+        display: none;
+    }
+    .on {
+        color: #2d93fc;
+        border: 0;
     }
     .menu_bar{
         display: block;
@@ -186,19 +196,22 @@
     .menu_x{
         display: none;
         position: absolute;
-        right: 10%;
-        top: 5%;
+        right: 5%;
+        top: 10%;
         color: white;
-        font-size: 2rem;
+        font-size: 1.5rem;
         z-index: 9999;
     }
     .login {
         display: none;
         z-index: 9000;
         color: white;
-        width: 50%;
+        width: 40%;
         padding-top: 100px;
         right: 0;
+    }
+    .login a {
+        margin: 0 5px;
     }
     .main-wrap{
         width: 100%;
