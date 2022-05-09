@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="script/jquery-1.12.4.min.js"></script>
@@ -70,6 +71,8 @@
                     </ul>
                 </div>
             </div>
+            <div class="menu_bar"><i class="fa-solid fa-bars"></i></div>
+            <div class="menu_x"><i class="fa-solid fa-x"></i></div>
             <div class="subMenuBg"></div>
             <!-- /#gnb -->
             <div class="login">
@@ -80,7 +83,7 @@
     </header>
     <!-- /header -->
 
-    
+
     <section id="main-section">
         <div class="main-img">
             <h2>한솜소개</h2>
@@ -116,6 +119,35 @@
                     현재까지 창간 15주년이 지나, 통권 61권이 발행되었습니다.
                 </div>
             </div>
+            <div class="tabs-m">
+                <ul>
+                    <li class="tab-link current" data-tab="tab1-m">
+                        <a href="#"><i class="fa-solid fa-caret-right"></i></a>
+                        <img src="/images/sub-logo1.png" alt="한솜미디어">
+                    </li>
+                    <div id="tab1-m" class="tab-cont current">
+                        종합출판사로 출판 분야로는 경영, 경제, 철학, 자연, 교양과학, 사회, 정치, 법, 외국어,
+                        컴퓨터, 인터넷 등에 비중을 두고 있으며 현재 550여 종의 도서가 출판이 되었습니다.
+                        출판된 도서 중 일부 교보문고 베스트셀러 및 선정되기도 하였습니다.
+                    </div>
+                    <li class="tab-link" data-tab="tab2-m">
+                        <a href="#"><i class="fa-solid fa-caret-right"></i></a>
+                        <img src="/images/sub-logo2.png" alt="띠앗">
+                    </li>
+                    <div id="tab2-m" class="tab-cont">
+                        종합출판사로 출판분야로는 문학, 소설, 시. 에세이, 심리, 교육, 인물, 예술, 스포츠, 유아,
+                        아동 등에 비중을 두고 있으며 현재 380여 종이 출판이 되었습니다.
+                    </div>
+                    <li class="tab-link" data-tab="tab3-m">
+                        <a href="#"><i class="fa-solid fa-caret-right"></i></a>
+                        <img src="/images/sub-logo3.png" alt="풍자문학">
+                    </li>
+                    <div id="tab3-m" class="tab-cont">
+                        1년에 4회 발행되는 계간 잡지로 작품은 쓰셨지만 마땅히 발표할 곳이 없는 작가분들에게 등단의 기회를 드리는 순수 문예지입니다. 2002년 8월 28일에 창간하여
+                        현재까지 창간 15주년이 지나, 통권 61권이 발행되었습니다.
+                    </div>
+                </ul>
+            </div>
             <p class="text2">
                 저희 출판사는 책을 출판하시려는 모든 분들을 환영합니다.<br>
                 자서전, 시집, 소설, 수필, 처세, 경영, 건강, 회사홍보를 위한 도서 등
@@ -135,24 +167,24 @@
         <div class="footer-wrap">
             <div class="footer-logo"><a href="/"><img src="images/footer-logo.png" alt="로고2"></a></div>
             <!-- /.footer-logo -->
-                <div class="info-wrap">
-                    <div class="footer-menu">
-                        <ul>
-                            <li><a href="#">이용약관</a></li>
-                            <li><a href="#">개인정보 처리방침</a></li>
-                            <li><a href="#">사이트맵</a></li>
-                        </ul>
-                    </div>
-                    <!-- /.footer-menu -->
-                    <address>
-                        <div class="info">
-                            <p class="name">상호명 : 도서출판 띠앗 / 한솜미디어 | 대표 : 김태봉 | 주소 : (우)05044 서울시 광진구 아차산로 413(구의동243-22)</p>
-                            <p class="call">사업자등록 번호 : 206-91-58786 | 전화 : 02-499-4486 | 팩스 : 02-454-0493</p>
-                            <p class="email">원고 전송 이메일 : poongja2002@naver.com</p>
-                            <p class="copyright">Copyright &copy; 2022 hansom All rights reserved.</p>
-                        </div>
-                    </address>
+            <div class="info-wrap">
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
                 </div>
+                <!-- /.footer-menu -->
+                <address>
+                    <div class="info">
+                        <p class="name">상호명 : 도서출판 띠앗 / 한솜미디어 | 대표 : 김태봉 | 주소 : (우)05044 서울시 광진구 아차산로 413(구의동243-22)</p>
+                        <p class="call">사업자등록 번호 : 206-91-58786 | 전화 : 02-499-4486 | 팩스 : 02-454-0493</p>
+                        <p class="email">원고 전송 이메일 : poongja2002@naver.com</p>
+                        <p class="copyright">Copyright &copy; 2022 hansom All rights reserved.</p>
+                    </div>
+                </address>
+            </div>
         </div>
     </footer>
 
