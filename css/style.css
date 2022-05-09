@@ -351,6 +351,7 @@ ul.tabs li.current{
         background: none;
         font-weight: normal;
     }
+
     .sidemenu {
         margin: 2rem 0;
         display: flex;
@@ -416,5 +417,6 @@ ul.tabs li.current{
     .info {
         font-size: 11px;
     }
+
 
 }
