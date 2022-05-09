@@ -90,3 +90,8 @@ hr {
     font-weight: bolder;
     transition: all .2s ease-out;
 }
+
+/* media */
+@media screen and (max-width: 1200px){
+    
+}
