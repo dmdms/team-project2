@@ -26,7 +26,7 @@
     background: url(../images/main-back2.png) no-repeat center/cover;
 }
 .main2-wrap {
-    padding: 20rem 3rem 0 68rem;
+    padding: 20rem 3rem 0 70%;
 }
 .main2-title {
     font-size: 45px;
@@ -73,13 +73,15 @@
     font-size: 30px;
 }
 .books-wrap{
+    width: 1200px;
+    margin: 0 auto;
     text-align: center;
     padding: 11rem 30px 3rem 30px;
 }
 .books-wrap h3 {
     text-align: left;
     font-size: 30px;
-    margin: 0 42rem 3rem 22rem;
+    margin: 3rem 11%;
     padding: 0 0 0 15px;
     border-left: 6px solid #0065ca;
 }
@@ -109,5 +111,4 @@
 .main-button button:hover {
     background: rgb(115, 115, 115);
     transition: all .2s ease-out;
-
 }
