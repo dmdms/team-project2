@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&display=swap');
+
 body {
     background: white;
     color: black;
@@ -18,9 +18,6 @@ ul, ol {
 header {
     position: relative;
 }
-.logo img{
-    width: 230px;
-}
 .header-wrap {
     height: 100px;
     position: fixed;
@@ -31,6 +28,9 @@ header {
     justify-content: space-around;
     align-items: center;
     background: white;
+}
+.logo img{
+    width: 230px;
 }
 .login {
     display: flex;
@@ -45,9 +45,9 @@ header {
 #gnb {
     width: 100%;
     display: flex;
-    column-gap: 5rem;
+    column-gap: 2.5rem;
     margin-top: 2%;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 }
 #gnb > li {
@@ -58,12 +58,14 @@ header {
     display: block;
     text-align: center;
 }
-.main-menu{
+.main-menu {
     padding-bottom: 20px;
+
 }
 .on {
     color: #2d93fc !important;
     border-bottom: 2px solid #2d93fc;
+    transition: all ease-in-out .3s;
 }
 .sub {
     font-weight: bold;
@@ -72,17 +74,13 @@ header {
     display: none;
     position: absolute;
     z-index: 1000;
-    font-size: 15px;
     text-align: center;
     margin-top: 1rem;
+    font-size: 16px;
 }
 .lnb > li {
     display: inline-block;
-    line-height: 2rem;
-    
-}
-.lnb li a:hover {
-    font-weight: bolder;
+    line-height: 2rem;  
 }
 .subMenuBg {
     display: none;
@@ -91,9 +89,8 @@ header {
     left: 0;
     width: 100%; 
     height: 150px;
-    background-color: white;
+    background: white;
 }
-
 
 /* === footer === */
 footer {

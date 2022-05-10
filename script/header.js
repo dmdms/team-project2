@@ -1,5 +1,6 @@
 $(function(){
     mainNav();
+    menu();
 }); 
 
 function mainNav(){
@@ -17,4 +18,23 @@ function mainNav(){
     $(".lnb > li").mouseleave(function(){
         $(this).children("a").removeClass("sub")
     });
+}
+
+
+function menu(){
+    $('.menu_bar').click(function(){
+        $('.nav').show();
+        $('.login').show();
+        $('#sidePannel').show();
+        $('.menu_bar').hide();
+        $('.menu_x').show();
+    });
+    $('.menu_x').click(function(){
+        $('.nav').hide();
+        $('.login').hide();
+        $('#sidePannel').hide();
+        $('.menu_bar').show();
+        $('.menu_x').hide();
+    });
+  
 }

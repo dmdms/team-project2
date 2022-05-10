@@ -3,6 +3,7 @@ $(function(){
     booklist();
     mainNav();
     mobiletab();
+    menu();
 });
 function mainNav(){
     $("#gnb > li").mouseenter(function(){
@@ -19,6 +20,7 @@ function mainNav(){
     $(".lnb > li").mouseleave(function(){
         $(this).children("a").removeClass("sub");
     });
+
 }
 function booklist(){
     $(".list-icon a:first").addClass("active");
@@ -56,4 +58,21 @@ function mobiletab(){
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
 	});
+}
+function menu(){
+    $('.menu_bar').click(function(){
+        $('.nav').show();
+        $('.login').show();
+        $('#sidePannel').show();
+        $('.menu_bar').hide();
+        $('.menu_x').show();
+    });
+    $('.menu_x').click(function(){
+        $('.nav').hide();
+        $('.login').hide();
+        $('#sidePannel').hide();
+        $('.menu_bar').show();
+        $('.menu_x').hide();
+    });
+  
 }

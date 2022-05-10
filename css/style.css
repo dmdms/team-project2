@@ -39,6 +39,12 @@ header {
     align-items: center;
     background: white;
 }
+.menu_bar {
+    display: none;
+}
+.menu_x {
+    display: none;
+}
 .login {
     display: flex;
     margin: 0 0 40px 0;
@@ -86,12 +92,8 @@ header {
 }
 .lnb > li {
     display: inline-block;
-    line-height: 2rem;
-    
+    line-height: 2rem;  
 }
-/* .lnb li a:hover {
-    font-weight: bolder;
-} */
 .subMenuBg {
     display: none;
     position: absolute;
@@ -324,6 +326,53 @@ ul.tabs li.current{
     .logo img {
         width: 150px;
     }
+    #sidePannel {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 2000;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .5);
+    }
+    .nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 200vh;
+        flex-direction: column;
+        z-index: 8000;
+        background-color: #333;
+        padding: 100px 0 0 0;
+    }
+    #gnb {
+        display: block;
+        border-top: 1px solid white;
+        width: 100%;
+        padding-top: 20px;
+    }
+    #gnb li{
+        width: 100%;
+        height: 50px;
+        color: white;
+        font-size: 15px;
+        z-index: 8000;
+        padding-left: 2rem;
+    }
+    #gnb > li > a {
+        text-align: left;
+        line-height: 50px;
+    }
+    .lnb > li{
+        display: none;
+    }
+    .on {
+        color: #2d93fc;
+        border: 0;
+    }
     .menu_bar{
         display: block;
         position: absolute;
@@ -332,11 +381,25 @@ ul.tabs li.current{
         font-size: 1.5rem;
         top: 32%;
     }
-    .nav, .login {
-        display: none;
-    }
     .menu_x{
         display: none;
+        position: absolute;
+        right: 5%;
+        top: 10%;
+        color: white;
+        font-size: 1.5rem;
+        z-index: 9999;
+    }
+    .login {
+        display: none;
+        z-index: 9000;
+        color: white;
+        width: 40%;
+        padding-top: 100px;
+        right: 0;
+    }
+    .login a {
+        margin: 0 5px;
     }
     .main-img {
         background: #333;
