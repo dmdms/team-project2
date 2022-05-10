@@ -101,10 +101,10 @@ header {
     height: 150px;
     background-color: white;
 }
-.nav-bar {
+.menu_bar {
     display: none;
 }
-.nav-x {
+.menu_x {
     display: none;
 }
 
