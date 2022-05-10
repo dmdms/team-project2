@@ -218,11 +218,11 @@
     }
     .main1-text {
         margin: 0 auto;
-        padding: 1rem 0 0 15%;
+        padding: 1rem 0 0 26%;
         width: 200px;
     }
     .main1 {
-        width: 100%;
+        width: 425px;
         height: 224px;
     }
     .main1-text h2 {
@@ -261,11 +261,11 @@
         width: 100px;
     }
     .main3 {
-        width: 100%;
+        width: 425px;
     }
     .main3-text {
         width: 300px;
-        padding: 25px 115px;
+        padding: 25px 0 0 115px;
     }
     .main3-text h3{
         font-size: 20px;
@@ -292,7 +292,8 @@
         margin : 50px 0;
     }
     .footer-wrap{
-        width: 100%;
+        width: 425px;
+        background: #333;
     }
     .info-wrap {
         width: 300px;
