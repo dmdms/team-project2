@@ -60,12 +60,11 @@ header {
 }
 .main-menu {
     padding-bottom: 20px;
-
 }
 .on {
     color: #2d93fc !important;
     border-bottom: 2px solid #2d93fc;
-    transition: all ease-in-out .3s;
+    transition: all ease-in-out;
 }
 .sub {
     font-weight: bold;
