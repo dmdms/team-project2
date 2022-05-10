@@ -4,11 +4,11 @@ $(function(){
 }); 
 
 function mainNav(){
-    $("#gnb > li").mouseenter(function(){
+    $("#gnb > li, .subMenuBg").mouseenter(function(){
         $(this).children("a").addClass("on");
         $(".lnb, .subMenuBg").stop().slideDown("fast")
     });
-    $("#gnb > li").mouseleave(function(){
+    $("#gnb > li, .subMenuBg").mouseleave(function(){
         $(this).children("a").removeClass("on");
         $(".lnb, .subMenuBg").stop().slideUp("fast")
     });
@@ -19,6 +19,7 @@ function mainNav(){
         $(this).children("a").removeClass("sub")
     });
 }
+
 
 function menu(){
     $('.menu_bar').click(function(){
