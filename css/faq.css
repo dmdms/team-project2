@@ -162,6 +162,7 @@ hr {
         right: 10%;
         font-size: 1.5rem;
         top: 32%;
+        
     }
     .menu_x{
         display: none;
@@ -182,5 +183,35 @@ hr {
     }
     .login a {
         margin: 0 5px;
+    }
+    .cs-main-wrap h2 {
+        font-size: 22px;
+    }
+    .faq-title h2 {
+        font-size: 22px;
+    }
+    .faq-title p {
+        font-size: 10px;
+    }
+    hr {
+        max-width: 300px;
+    }
+    .faq-content span {
+        font-size: 16px;
+    }
+    .faq {
+        max-width: 420px;
+    }
+    .faq-top {
+        max-width: 420px;
+    }
+    button {
+        max-width: 420px;
+    }
+    .faq-content {
+        max-width: 420px;
+    }
+    .faq-page {
+        max-width: 425px;
     }
 }
