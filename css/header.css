@@ -61,9 +61,10 @@ header {
 }
 .main-menu {
     padding-bottom: 20px;
-
 }
 .on {
+    position: relative;
+    z-index: 9999;
     color: #2d93fc !important;
     border-bottom: 2px solid #2d93fc;
     transition: all ease-in-out .3s;
@@ -86,10 +87,10 @@ header {
 .subMenuBg {
     display: none;
     position: absolute;
-    top: 100px; 
+    top: 70px; 
     left: 0;
     width: 100%; 
-    height: 150px;
+    height: 160px;
     background: white;
 }
 
